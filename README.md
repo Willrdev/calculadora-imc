@@ -18,8 +18,7 @@ Este é um projeto simples em Python que calcula o **IMC (Índice de Massa Corpo
 
 ## 🖥 Exemplo de uso
 
-Qual o seu peso? 70
-
+Qual o seu peso? 70  
 Qual a sua altura? 1.75
 
 Você está com peso normal
