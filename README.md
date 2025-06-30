@@ -26,7 +26,7 @@ Este é um projeto em Python que permite calcular o IMC (Índice de Massa Corpor
 ---
 
 ## ▶️ Como executar o projeto
-```bash
+
 1. Clone este repositório:
 git clone https://github.com/Willrdev/calculadora-imc.git
 
