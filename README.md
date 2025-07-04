@@ -1,48 +1,69 @@
+# 🧮 Calculadora de IMC
+
+Este é um projeto web criado com **Python (Flask)**, **HTML** e **CSS**, que calcula o **Índice de Massa Corporal (IMC)** com base no nome, peso e altura informados pelo usuário.
 
 ---
 
-## ⚖️ `README.md` — Calculadora de IMC
+## 🚀 Funcionalidades
 
-```markdown
-# ⚖️ Calculadora de IMC
-
-Este é um projeto em Python que permite calcular o IMC (Índice de Massa Corporal) a partir do peso e altura do usuário, e exibir a classificação de acordo com a OMS.
-
----
-
-## 🎯 Funcionalidades
-
-- Entrada do nome, peso e altura
-- Cálculo do IMC com 2 casas decimais
-- Classificação de acordo com a tabela oficial:
-
-| Faixa de IMC         | Classificação       |
-|----------------------|---------------------|
-| Menor que 18.5       | Abaixo do peso      |
-| Entre 18.5 e 24.9    | Peso normal         |
-| Entre 25.0 e 29.9    | Sobrepeso           |
-| 30.0 ou mais         | Obesidade           |
+- ✅ Entrada de nome, peso (kg) e altura (m)
+- ✅ Cálculo automático do IMC
+- ✅ Mensagem personalizada conforme o resultado
+- ✅ Layout responsivo (desktop e mobile)
+- ✅ Design moderno com campos estilizados
+- ✅ Favicon e estrutura separada para CSS
 
 ---
 
-## ▶️ Como executar o projeto
+## 🗂️ Estrutura de Pastas
 
-1. Clone este repositório:
-git clone https://github.com/Willrdev/calculadora-imc.git
+calculadora-imc/
+├── app.py
+├── static/
+│ ├── style.css
+│ └── favicon.png
+├── templates/
+│ └── index.html
+└── README.md
 
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- [Python 3.13+](https://www.python.org/)
+- [Flask](https://flask.palletsprojects.com/)
+- HTML5
+- CSS3
+
+---
+
+## 💡 Como Usar
+
+### 1. Clone o repositório:
+
+```bash
+git clone https://github.com/Willrdev/calculadora-imc
 cd calculadora-imc
-python imc.py
 
-💡 Exemplo de uso
+###2. Instale o Flask:
 
-Qual o seu nome? Willian
-Qual o seu peso? 70
-Qual a sua altura? 1.75
+pip install flask
 
-Willian, seu IMC é: 22.86
-Você está com peso normal
+###3. Rode o app:
 
+python app.py
 
-🧑‍💻 Autor
-Desenvolvido por Willian
-🔗 github.com/Willrdev
+###📱 Responsividade
+
+O layout se adapta automaticamente a diferentes tamanhos de tela como smartphones, tablets e notebooks.
+A responsividade é feita com @media (max-width: 768px) no CSS.
+
+>
+###📌 Licença
+Este projeto está sob a licença MIT.
+Você pode usar, modificar e compartilhar livremente.
+
+🙋‍♂️ Autor
+Desenvolvido por Willian Rodrigues
+GitHub: @Willrdev
