@@ -1,4 +1,4 @@
-```bash
+
 # 🧮 Calculadora de IMC
 
 Este é um projeto web criado com **Python (Flask)**, **HTML** e **CSS**, que calcula o **Índice de Massa Corporal (IMC)** com base no nome, peso e altura informados pelo usuário.
@@ -41,27 +41,27 @@ calculadora-imc/
 
 ## 💡 Como Usar
 
-### 1. Clone o repositório:
+## 1. Clone o repositório:
 
 
 git clone https://github.com/Willrdev/calculadora-imc
 cd calculadora-imc
 
-###2. Instale o Flask:
+## 2. Instale o Flask:
 
 pip install flask
 
-###3. Rode o app:
+## 3. Rode o app:
 
 python app.py
 
-###📱 Responsividade
+## 📱 Responsividade
 
 O layout se adapta automaticamente a diferentes tamanhos de tela como smartphones, tablets e notebooks.
 A responsividade é feita com @media (max-width: 768px) no CSS.
 
 >
-###📌 Licença
+## 📌 Licença
 Este projeto está sob a licença MIT.
 Você pode usar, modificar e compartilhar livremente.
 
