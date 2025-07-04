@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f4f7fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container geral */
+.container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Formulário */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 280px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Resultado */
+.resultado-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 280px;
+}
+
+.resultado-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.resultado-container p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* ...seu CSS atual... */
+
+/* RESPONSIVO PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container, .resultado-container {
+        width: 90%;
+        margin-bottom: 20px;
+        border-bottom: 20px;
+    }
+}

@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Calculadora de IMC</h1>
+            <form action="/calcular_imc" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="number" name="peso" step="0.01" placeholder="Peso (kg)" required>
+                <input type="number" name="altura" step="0.01" placeholder="Altura (m)" required>
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+
+        {% if nome %}
+        <div class="resultado-container">
+            <h2>Resultado:</h2>
+            <p><strong>{{ nome }}</strong>, seu IMC é <strong>{{ imc|round(2) }}</strong></p>
+            <p>{{ mensagem }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
