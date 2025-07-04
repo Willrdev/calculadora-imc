@@ -42,7 +42,6 @@ calculadora-imc/
 
 ### 1. Clone o repositório:
 
-```bash
 git clone https://github.com/Willrdev/calculadora-imc
 cd calculadora-imc
 
