@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #F2F2F2; /* Fundo claro */
+    background-color: #0d6994; /* Fundo claro */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -18,8 +18,8 @@ body {
 
 /* Formulário */
 .form-container {
-    background-color: white;
-    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     width: 280px;
@@ -49,8 +49,8 @@ input::placeholder {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #2F80ED; /* Azul principal */
-    color: white;
+    background-color: #2a6eea; /* Azul principal */
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 6px;
     font-weight: bold;
@@ -60,13 +60,13 @@ button {
 }
 
 button:hover {
-    background-color: #1366d6; /* Azul mais escuro no hover */
+    background-color: #2a6eea; /* Azul mais escuro no hover */
 }
 
 /* Resultado */
 .resultado-container {
-    background-color: #fff;
-    padding: 30px;
+    background-color: #fffefe;
+    padding: 15px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     width: 280px;
@@ -75,7 +75,7 @@ button:hover {
 
 .resultado-container h2 {
     color: #2F80ED; /* Azul principal */
-    margin-bottom: 10px;
+    margin-bottom: 13;
 }
 
 .resultado-container p {
