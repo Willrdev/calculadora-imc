@@ -24,7 +24,7 @@
         <div class="resultado-container">
             <h2>Resultado:</h2>
             <p><strong>{{ nome }}</strong>, seu IMC é <strong>{{ imc|round(2) }}</strong></p>
-            <p>{{ mensagem }}</p>
+            <p class="{{ classe_mensagem }}">{{ mensagem }}</p>
         </div>
         {% endif %}
     </div>

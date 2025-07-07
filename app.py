@@ -14,18 +14,26 @@ def calcular_imc():
 
     imc = peso / (altura * altura) 
 
-    print(f'\n{nome}, seu IMC é: {imc:.2f}')
-
     if imc < 18.5:
         mensagem = 'Você está abaixo do peso'
+        classe_mensagem = 'mensagem-alerta'
     elif imc < 25:
         mensagem = 'Você está com peso normal'
+        classe_mensagem = 'mensagem-normal'
     elif imc < 30:
-       mensagem = 'Você está com sobrepeso'
+        mensagem = 'Você está com sobrepeso'
+        classe_mensagem = 'mensagem-alerta'
     else:
-       mensagem = 'Você está com obesidade'
+        mensagem = 'Você está com obesidade'
+        classe_mensagem = 'mensagem-risco'
 
-    return render_template('index.html', nome=nome, imc=imc, mensagem=mensagem)
+    return render_template(
+        'index.html',
+        nome=nome,
+        imc=imc,
+        mensagem=mensagem,
+        classe_mensagem=classe_mensagem
+    )
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    app.run(debug=True)
