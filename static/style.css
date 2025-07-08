@@ -1,9 +1,8 @@
-/* Reset e corpo */
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    background-color: #000000;
+    height: 100vh;
+    background-color: #0d6994; /* Fundo claro */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -19,21 +18,20 @@ body {
 
 /* Formulário */
 .form-container {
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
     width: 280px;
     text-align: center;
 }
 
-/* Título do formulário */
+/* Título principal */
 .form-container h1 {
-    color: #2F80ED;
+    color: #2F80ED; /* Azul principal */
     margin-bottom: 20px;
 }
 
-/* Inputs */
 input {
     width: 100%;
     padding: 10px;
@@ -45,15 +43,14 @@ input {
 }
 
 input::placeholder {
-    color: #828282;
+    color: #828282; /* Cinza para placeholder */
 }
 
-/* Botão */
 button {
     width: 100%;
     padding: 10px;
-    background-color: #2a6eea;
-    color: #ffffff;
+    background-color: #2a6eea; /* Azul principal */
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 6px;
     font-weight: bold;
@@ -63,22 +60,22 @@ button {
 }
 
 button:hover {
-    background-color: #195dd1;
+    background-color: #2a6eea; /* Azul mais escuro no hover */
 }
 
 /* Resultado */
 .resultado-container {
-    background-color: #fff;
+    background-color: #fffefe;
     padding: 15px;
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
     width: 280px;
     text-align: center;
 }
 
 .resultado-container h2 {
-    color: #2F80ED;
-    margin-bottom: 10px;
+    color: #2F80ED; /* Azul principal */
+    margin-bottom: 13;
 }
 
 .resultado-container p {
@@ -87,38 +84,33 @@ button:hover {
     color: #333333;
 }
 
-/* Mensagens de IMC */
+/* Mensagem de resultado positiva (IMC normal) */
 .resultado-container .mensagem-normal {
-    color: #27AE60;
+    color: #27AE60; /* Verde claro */
     font-weight: bold;
 }
 
+/* Mensagem de alerta (IMC fora do normal) */
 .resultado-container .mensagem-alerta {
-    color: #F2994A;
+    color: #F2994A; /* Laranja suave */
     font-weight: bold;
 }
 
+/* Mensagem de risco (IMC muito alto) */
 .resultado-container .mensagem-risco {
-    color: #EB5757;
+    color: #EB5757; /* Vermelho suave */
     font-weight: bold;
 }
 
-/* Responsivo para celular */
+/* RESPONSIVO PARA TELAS PEQUENAS */
 @media (max-width: 768px) {
-    body {
-        padding: 20px;
-        align-items: flex-start;
-    }
-
     .container {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
     }
 
-    .form-container,
-    .resultado-container {
-        width: 100%;
-        max-width: 320px;
+    .form-container, .resultado-container {
+        width: 90%;
+        margin-bottom: 20px;
     }
 }
