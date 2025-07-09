@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request
+from random import random
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', random=random)
 
 @app.route('/calcular_imc', methods=['POST'])
 def calcular_imc():
@@ -28,12 +29,13 @@ def calcular_imc():
         classe_mensagem = 'mensagem-risco'
 
     return render_template(
-        'index.html',
-        nome=nome,
-        imc=imc,
-        mensagem=mensagem,
-        classe_mensagem=classe_mensagem
-    )
+    'index.html',
+    nome=nome,
+    imc=imc,
+    mensagem=mensagem,
+    classe_mensagem=classe_mensagem,
+    random=random
+)
 
 if __name__ == '__main__':
     app.run(debug=True)
