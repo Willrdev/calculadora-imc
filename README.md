@@ -55,10 +55,11 @@ pip install flask
 
 python app.py
 
-## 📱 Responsividade
+## 🔗 Acesse o Projeto
 
-O layout se adapta automaticamente a diferentes tamanhos de tela como smartphones, tablets e notebooks.
-A responsividade é feita com @media (max-width: 768px) no CSS.
+Você pode testar a calculadora de IMC online clicando no link abaixo:
+
+👉 [Acesse a Calculadora de IMC](https://calculadora-imc-4xwk.onrender.com/)
 
 >
 ## 📌 Licença
