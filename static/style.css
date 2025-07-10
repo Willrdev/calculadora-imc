@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: linear-gradient(to top, #6a0dad, #000000);
+    background: linear-gradient(to bottom, #6a0dad, #000000);
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
