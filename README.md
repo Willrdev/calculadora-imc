@@ -55,11 +55,11 @@ pip install flask
 
 python app.py
 
-## 🔗 Acesse o Projeto
+## 🔗 Resultado do Projeto
 
-Você pode testar a calculadora de IMC online clicando no link abaixo:
-
-👉 [Acesse a Calculadora de IMC](https://calculadora-imc-4xwk.onrender.com/)
+<p align="center">
+  <img src="./assets/tela_calculadora_imc_resultado.png" alt="Resultado da Calculadora de IMC" width="700">
+</p>
 
 >
 ## 📌 Licença
